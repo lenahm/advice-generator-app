@@ -50,6 +50,7 @@ main #advice {
 }
 
 button {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,4 +59,8 @@ button {
     border: none; 
     border-radius: 50%;
     background-color: var(--neon-green);
+}
+
+button:hover {
+    box-shadow: 0 0 30px 10px var(--neon-green);
 }
