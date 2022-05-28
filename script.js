@@ -2,6 +2,8 @@ const advice = document.getElementById('advice');
 const adviceId = document.getElementById('advice-id');
 const newAdviceBtn = document.getElementById('new-advice-btn'); 
 
+generateAdvice();
+
 async function generateAdvice() {
     const res = await fetch('https://api.adviceslip.com/advice'); 
     const data = await res.json(); 
